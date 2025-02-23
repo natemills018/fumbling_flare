@@ -1,6 +1,6 @@
 ---
 
-title : 'My Second Blog Post"
+title : 'My Second Blog Post'
 pubDate: 2025-23-02
 description: 'Here is an example of an astro post, or in my case potentially a todo, or note list'
 author: 'Nate Mills'
