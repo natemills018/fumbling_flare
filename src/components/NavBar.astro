@@ -1,0 +1,28 @@
+---
+const links = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+];
+
+let isOpen = false;
+---
+
+<header class="bg-white shadow-md dark:bg-gray-900">
+  <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="text-2xl font-bold text-gray-800 dark:text-white">My Blog</a>
+
+    <!-- Desktop Links -->
+    <ul class="hidden md:flex space-x-6">
+      {links.map((link) => (
+        <li>
+          <a href={link.href} class="text-gray-600 dark:text-gray-300 hover:text-blue-500">{link.name}</a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Mobile Menu Button -->
+ 
+</header>
