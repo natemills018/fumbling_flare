@@ -1,4 +1,6 @@
 ---
+import NavBar from '../components/NavBar.astro';
+
 interface Props {
 	title: string;
 	description?: string;
@@ -20,6 +22,7 @@ const { title, description = 'A community of music producers and ethusists', ima
 		<title>{title}</title>
 	</head>
 	<body>
+		<NavBar />
 		<slot />
 	</body>
 </html>
